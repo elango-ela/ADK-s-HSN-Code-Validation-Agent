@@ -77,7 +77,7 @@ def hsn_hierarchy_search(hsn_code: str) -> dict:
         }
 
     # Load and clean CSV
-    df = pd.read_csv(EXCEL_FILE)
+    df = pd.read_excel(EXCEL_FILE)
     df.columns = df.columns.str.strip()
     df["HSNCode"] = df["HSNCode"].astype(str).str.strip()
     df["Description"] = df["Description"].astype(str).str.strip()
