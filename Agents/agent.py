@@ -114,6 +114,18 @@ def hsn_hierarchy_search(hsn_code: str) -> dict:
         "formatted_output": "\n".join(output_lines)
     }
 
+
+'''
+HSN Code: 30049011
+
+Hierarchy:
+2-digit   : 30       - Pharmaceutical products
+4-digit   : 3004     - Medicaments
+6-digit   : 300490   - Other Medicaments
+8-digit   : 30049011 - Paracetamol Tablets
+
+'''
+
 # -----------------------------
 # Agent Definition
 # -----------------------------
