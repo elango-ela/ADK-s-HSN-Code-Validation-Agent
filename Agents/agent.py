@@ -11,7 +11,7 @@ from io import BytesIO
 from google.adk.agents import Agent
 from google.adk.models.lite_llm import LiteLlm
 
-from dotenv import load_dotenv  # For loading admin password
+from dotenv import load_dotenv  
 
 # Load environment variables from .env
 load_dotenv()
