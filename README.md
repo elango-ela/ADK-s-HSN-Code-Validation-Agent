@@ -122,6 +122,16 @@ root_agent = Agent(
 - Handles edge cases such as invalid formats, missing codes, and duplicate descriptions gracefully.
 ### Performance
 - Pre-embedding the static dataset improves query and reduces response time.
+### Future Enhancements and Suggestions
+
+#### Integration of Google Vertex AI with Google ADK for More Conversational and Interactive Agent  
+- Built-in precise embedding models for semantic similarity, enabling smarter matching between user queries and HSN codes.
+- Integrated vector databases to support fast, scalable semantic search over large codebases.
 
 
+#### Dynamic HSN Master Data Updates
+- Vertex AI Pipelines, combined with scheduled Cloud Functions, can automate the ingestion and processing of updated HSN master datasets. This approach allows the agent to stay up-to-date without requiring full redeployment, significantly reducing manual maintenance effort.
+
+#### Feedback and Data Monitoring
+- Using Vertex AI's analytics and monitoring tools, the system can track patterns in user queries and validation errors. If consistent mismatches are found, it may indicate issues in the HSN master data (e.g., outdated or ambiguous entries). These insights could feed back into a data curation workflow for ongoing quality assurance.
 
